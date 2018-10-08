@@ -22,3 +22,5 @@ var returnBody = JSON.parse(responseBody);
 
 // Set variable for the current envirnment
 pm.environment.set("EnvirnmentVariable", "exampleValue");
+
+
