@@ -1,3 +1,6 @@
+// set the API call response body to a variable after parsing
+var returnBody = JSON.parse(responseBody);
+
 /* Status code tests
 *  Various test against the returned status code.
 */
@@ -16,9 +19,6 @@ pm.test("Successful POST request", function () {
 /* Variables
 *  Set or unset variables
 */
-
-// set the API call response body to a variable after parsing
-var returnBody = JSON.parse(responseBody);
 
 // Set variable for the current envirnment
 pm.environment.set("EnvirnmentVariable", "exampleValue");
